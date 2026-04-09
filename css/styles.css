@@ -448,7 +448,8 @@ h1, h2, h3, h4, h5, h6, p{
     height: 24px;
 
     border: none;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
     
 
     display: flex;
@@ -456,10 +457,7 @@ h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
 
    
-    border-radius: 100%;
-    fill: #E7E9FC;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 
     fill: #2E2F42;
 
@@ -476,13 +474,13 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
-.modal-close-btn:hover {
+.modal-close-btn:hover, .modal-close-btn:focus {
     background-color: #404BBF;
     border: none;
 
 }
 
-.modal-close-btn:hover .close{
+.modal-close-btn:hover .close, .modal-close-btn:focus .close {
     fill: #fff;
 }
 
@@ -558,6 +556,7 @@ position: relative;
         border-radius: 4px;
         width: 100%;/*360px;*/
         height: 120px;
+        resize: none;
         padding: 8px 16px;
 
             font-weight: 400;
